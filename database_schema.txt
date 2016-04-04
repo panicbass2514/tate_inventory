@@ -1,0 +1,137 @@
+adminType(empty)
+	-adminID
+	-adminName
+
+assignments(empty)
+	-assingn_id
+	-assign_timestamp
+	-table_no
+	-assign_userid
+	-assign_avrid
+	-assign_cpuid
+	-assign_harphoneid
+	-assign_headsetid
+	-assign_keyboardid
+	-assign_monitorid
+	-assign_mouseid
+	-assign_printerid
+	-assign_tableid
+	-assign_upsid
+	-assign_chair
+	-assign_assignedby
+	-assign_status
+
+assigns
+	-assigns_id
+	-ws_id
+	-ps_is
+	-itemname
+	-staff_id
+	-staff_idN
+	-timestamp
+
+comments
+	-comment_id
+	-timestamp
+	-comments
+	-ws_id
+	-staff_id
+
+invoices(empty)
+	-invoice_id
+	-invoice_no
+	-supplier_name
+	-invoice_date
+	-mouseId
+	-keyboardId
+	-cpuId
+	-monitorId
+	-headsetId
+	-hardphoneId
+	-tabletId
+	-avrId
+	-upsId
+	-printerId
+
+logs
+	-log_id
+	-timestamp
+	-trigger
+	-staff_id
+
+notifications
+	-noteID
+	-userID_fk
+	-content
+	-status
+	-timestamp
+
+office_location
+	-office_location_id
+	-location_name
+
+physical_inventory
+	-inventory_number
+	-model
+	-condition
+	-remarks
+	-active
+	-label
+	-timestamp
+	-invoice_date
+	-supplier
+	-item_name
+	-type
+	-brand
+	-serial
+	-purchase_price
+	-vat
+	-ubp_check
+	-transac_ref
+	-official_receipt
+
+staff(empty)
+	-staffID
+	-uid
+	-sFirst
+	-sLast
+	-sMaidenLast
+	-emailCom
+	-email
+
+users(empty)(CPH database)
+	-userID
+	-username
+	-password
+	-firstName
+	-lastName
+	-middleName
+	-email
+	-gender
+	-supervisor
+	-active
+	-location
+	-title
+	-birthday
+	-address
+	-perm_address
+	-contact
+	-deptID_fk
+	-userType_fk	
+	-is_admin	
+	-is_HR
+	-is_editing
+	-is_finance
+	-start_date
+	-leave_credits
+	-leave_credits_old
+	-timestamp
+
+userType
+	-userType = tinyint(2)
+	-userTypeName = varchar(32)
+
+workstation
+	-workstation_id = bigint(20)
+	-label = varchar(255)
+	-location = varchar(255)
